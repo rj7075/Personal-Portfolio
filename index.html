@@ -1,0 +1,311 @@
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>My Portfolio</title>
+              <!-- css -->
+              <link rel="stylesheet" href="style.css" />
+              <script
+                src="https://kit.fontawesome.com/5b945d12c0.js"
+                crossorigin="anonymous"
+              ></script>
+            </head>
+            <body>
+              <div id="header">
+                  <nav>
+                    <div class="logo">
+                      <a href="index.html"><img src="/images/logo3-removebg-preview.png" alt="logo" /></a>
+                    </div>
+                    <div class="menu">
+                      <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
+                  </nav>  
+                  <div class="banner-section">
+                    <div class="banner-sub">
+                      <p>Software Developer</p>
+                      <h1>Hi' I am <span>Ranjeet Yadav</span></h1>
+                      <br />
+                      <h1>From India</h1>
+                    </div>
+                    <div class="header-image">
+                      <img src="./images/Ranjeet-Yadav3.jpg" alt="">
+                    </div>
+                 </div>
+                </div>
+                <!-- mobile header menu -->
+                <div class="mobile-header">
+                  
+                  <div class="mobile-logo">
+                      <a href="index.html"><img src="/images/logo3-removebg-preview.png" alt="logo" /></a>
+                  </div>
+                  <button class="menu-toggle" onclick="toggleMenu()">
+                      <span id="menu-icon">☰</span>
+                  </button>
+                  <div class="mobile-menu">
+                    <button class="close-menu" onclick="toggleMenu()">✖</button>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                  </div>
+              </div>
+              <div class="mobile-banner-section">
+                <div class="mobile-banner-sub">
+                  <p>Software Full Stack Developer</p>
+                  <h1>Hi' I am <span>Ranjeet Yadav</span> From India</h1>
+                  
+                </div>
+                <div class="mobile-header-image">
+                  <img src="./images/Ranjeet-Yadav3.jpg" alt="">
+                </div>
+             </div>
+            
+              
+                   <!-- <div class="banner-section">
+                      <div class="banner-sub">
+                        <p>Software Developer</p>
+                        <h1>Hi' I am <span>Alina</span></h1>
+                        <br />
+                        <h1>Jens from Britain</h1>
+                      </div>
+                   </div> -->
+              </div>
+              <!-- About Section -->
+              <div id="about">
+                <div class="container">
+                  <div class="row">
+                    <div class="about-col-1">
+                      <img src="/images/Ranjeet-Yadav.jpeg" alt="imgage" />
+                    </div>
+                    <div class="about-col-2">
+                      <h1 class="sub-title">About me</h1>
+                      <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece of classical Latin literature from 45 BC,
+                        making it over 2000 years old. 
+                      </p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-links" onClick="opentab('skills')">
+                          Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('expirience')">
+                          Expirience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-content active-tab" id="skills">
+                        <ul>
+                          <li><span>UI/UX</span><br />Designing Web and App interface</li>
+                          <li><span>Web Development</span><br />Web app developemnt</li>
+                          <li>
+                            <span>software Developer</span><br />Full stack Mern Developer
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="tab-content" id="expirience">
+                        <ul>
+                          <li>
+                            <span>6 intership expirience month </span><br />Designing Web
+                            and App interface
+                          </li>
+                          <li><span>Web Development</span><br />Web app developemnt</li>
+                          <li>
+                            <span>software Developer</span><br />Full stack Mern Developer
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="tab-content" id="education">
+                        <ul>
+                          <li>
+                            <span>B.tech from Information technology</span><br />Designing
+                            Web and App interface
+                          </li>
+                          <li><span>Web Development</span><br />Web app developemnt</li>
+                          <li>
+                            <span>software Developer</span><br />Full stack Mern Developer
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Services--------------------- -->
+              <div id="services">
+                <div class="container">
+                  <h1 class="sub-title">My Services</h1>
+                  <div class="services-list">
+                    <div>
+                      <i class="fa-solid fa-code"></i>
+                      <h2>Web Design</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        quaerat culpa rem eos exercitationem unde mollitia ea quisquam
+                        porro est!
+                      </p>
+                      <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                      <i class="fa-brands fa-app-store"></i>
+                      <h2>Software Developemnt</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        quaerat culpa rem eos exercitationem unde mollitia ea quisquam
+                        porro est!
+                      </p>
+                      <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-crop-simple"></i>
+                      <h2>Wordpress DEvelopemtn</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        quaerat culpa rem eos exercitationem unde mollitia ea quisquam
+                        porro est!
+                      </p>
+                      <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-web-awesome"></i>
+                      <h2>UI/UX design</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        quaerat culpa rem eos exercitationem unde mollitia ea quisquam
+                        porro est!
+                      </p>
+                      <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-web-awesome"></i>
+                      <h2>System Design</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        quaerat culpa rem eos exercitationem unde mollitia ea quisquam
+                        porro est!
+                      </p>
+                      <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-web-awesome"></i>
+                      <h2>UI/UX design</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                        quaerat culpa rem eos exercitationem unde mollitia ea quisquam
+                        porro est!
+                      </p>
+                      <a href="#">Learn more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- My Portfolio -->
+            <div id="portfolio">
+              <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                  <div class="work">
+                    <img src="./images/work4img.jpg" alt="work">
+                    <div class="layer">
+                      <h3>Social Media App</h3>
+                      <p>The app connects the you to the talented prople around the world. download it from play store</p>
+                      <a href="">
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <img src="./images/work4img.jpg" alt="work">
+                    <div class="layer">
+                      <h3>Social Media App</h3>
+                      <p>The app connects the you to the talented prople around the world. download it from play store</p>
+                      <a href="">
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <img src="./images/work5img.avif" alt="work">
+                    <div class="layer">
+                      <h3>Social Media App</h3>
+                      <p>The app connects the you to the talented prople around the world. download it from play store</p>
+                      <a href="">
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <img src="./images/work6img.jpg" alt="work">
+                    <div class="layer">
+                      <h3>Social Media App</h3>
+                      <p>The app connects the you to the talented prople around the world. download it from play store</p>
+                      <a href="">
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <img src="./images/work6img.jpg" alt="work">
+                    <div class="layer">
+                      <h3>Social Media App</h3>
+                      <p>The app connects the you to the talented prople around the world. download it from play store</p>
+                      <a href="">
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  
+                </div>
+                <a href="#" class="btn">See more</a>
+              </div>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact">
+              <div class="container">
+                <div class="row">
+                  <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rj7075yadav@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9838692186</p>
+                    <div class="social-icon">
+                      <a href="https://www.linkedin.com/in/ranjeet-yadav-174865211/"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://github.com/rj7075?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                      <a href="https://vercel.com/my-portfolios-projects-2fe6e92d"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="/images/Ranjeet_Yadav_9838692186 (1).pdf" download class="btn btn2">Download CV</a>
+                  </div>
+                  <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            <div class="copyright">
+              <p>Copyright © Ranjeet Yadav 2025 all Right Reserved</p>
+            </div>
+          
+              <!-- Javascript -->
+               
+              <script src="script.js"></script>
+            </body>
+          </html>
