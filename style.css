@@ -391,9 +391,9 @@ form .btn2{
 /* ----------------------------------Css for small screen----------------------------- */
 @media (max-width: 768px) {  /* Adjust width as needed */
 
-    html body{
+    /* *html body{
         overflow: hidden;
-    }
+    } */
     #header{
         display: none;
     }
@@ -670,9 +670,9 @@ width: 100%;
 
 @media (min-width: 320px) and (max-width:600px){
 
-    html body{
+    /* html body{
         overflow: hidden;
-    }
+    } */
 
     .mobile-menu{
         width: 50%;
