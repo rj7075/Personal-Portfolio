@@ -392,8 +392,10 @@ form .btn2{
 /* ----------------------------------Css for small screen----------------------------- */
 @media (max-width: 768px) {  /* Adjust width as needed */
 
-    *html body{
+    html, body {
+        max-width: 100%;
         overflow-x: hidden;
+        /* padding-right: 5%; */
     }
     #header{
         display: none;
@@ -402,6 +404,8 @@ form .btn2{
         background-color: #080808;
         color:#fff;
         padding-top: 18%;
+      
+     
     }
     .mobile-menu,.mobile-header,
     .mobile-banner-section
@@ -446,7 +450,7 @@ form .btn2{
     right: -100%; /* Hidden outside screen */
     width: 30%;
     height: 100%;
-    background: rgba(105, 99, 99, 0.95); /* Dark overlay */
+    background: rgba(155, 48, 48, 0.95); /* Dark overlay */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -682,9 +686,10 @@ width: 100%;
 
 @media (min-width: 320px) and (max-width:600px){
 
-    *body{
+    html, body {
+        max-width: 100%;
         overflow-x: hidden;
-    } 
+    }
 
     .mobile-header {
         display: flex;
@@ -700,17 +705,16 @@ width: 100%;
     }
 
     .mobile-menu{
-        width: 50%;
+        width: 100%;
     }
 
       .mobile-menu ul{
         list-style: none;
-        display: flex
-;
+        display: flex;
         flex-direction: column;
         padding: 0px;
         text-align: center;
-        margin-top: -201px;
+        margin-top: -133px;
       }
       .mobile-banner-section{
         display: block;
@@ -726,10 +730,11 @@ width: 100%;
       }
       .mobile-banner-sub h1{
         font-size: 24px;
+        padding-right: 5%;
       }
       .mobile-header-image img{
         height:50vh;
-        width: 110%;
+        width: 90%;
       }
       
       .about-col-1{
@@ -737,16 +742,16 @@ width: 100%;
       }
       .about-col-1 img{
         height: 50vh;
-        width: 120%;
+        width: 100%;
       }
       #services.sub-title{
         margin-top: 20px;
       }
-      /* .about-col-2{
-        padding-right: 10%;
-      } */
+      .about-col-2{
+        padding-right: 5%;
+      }
       .tab-links{
-        margin-right: 30px;
+        margin-right: 5%;
         font-size: 18px;
         font-weight: 500;
         cursor: pointer;
@@ -754,38 +759,87 @@ width: 100%;
     }
     
      .services-list div{
-       width: 130%;
-       height: 60vh;
+       width: 100%;
+       height: 50vh;
 
      }
+
+     .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        grid-gap: 40px;
+        margin-top: 50px 20px; 
+    }
+    
+    .services-list div{
+        background: #262626;
+        padding: 30px;
+        font-size: 13px;
+        border-radius: 5%;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        transition: background 0.5s, transform 0.5s;
+       
+    }
+    .services-list div:hover{
+        background: rgba(173, 164, 29, 0.856);
+        transform: translateY(-10px);
+        
+    }
+    .services-list div i{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .services-list div h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .services-list div p{
+        font-size: 12px;
+        line-height: 18px;
+        flex-wrap: wrap;
+        margin-top: 6px;
+    }
+    .services-list div a{
+       text-decoration: none;
+       color: antiquewhite;
+       padding-top: 30px;
+    } 
+
      .work-list{
-        width: 130%;
+        width: 100%;
        height: 60vh;
      }
 #contact{
-    margin-top: 300%;
+    margin-top: 200%;
 
 }
 .btn{
-    margin-top: 310%;
-    margin-left: 35%;
+    
+    margin-top: 220%;
+    margin-left: 25%;
 }
 .row{
     display: block;
 }
 .contact-left{
-    width: 120%;
+    width: 100%;
     height: 60vh;
     margin-left: 6%;
 
 }
+.contact-left p{
+    font-size: 15px;
+}
+ 
 .contact-right{
     width: 100%;
     height: 60vh;
-    margin-left: 10%;
+    margin-left: 0%;
 }
 .copyright{
-    width: 120%;
+    font-size: 13px;
+    width: 100%;
     height: 12vh;
 }
 
